@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+	<info organisation="havis/capture" module="capture-api" default="true" />
+
+	<configurations>
+		<conf name="default" />
+		<conf name="module" />
+		<conf name="doc" />
+		<conf name="src" />
+	</configurations>
+
+	<publications>
+		<artifact name="havis.capture-api" conf="default,module" />
+		<artifact name="havis.capture-api-javadoc" conf="doc" />
+		<artifact name="havis.capture-api-sources" conf="src" />
+	</publications>
+
+	<dependencies>
+		<dependency org="havis/util" name="cycle" rev="${havis.version}" conf="default,module" />
+		<dependency org="havis/transport" name="transport-api" rev="${havis.version}" conf="default,module" />
+	</dependencies>
+
+</ivy-module>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+	<info organisation="havis/capture" module="capture-api" />
+
+	<configurations>
+		<conf name="default" />
+		<conf name="module" />
+	</configurations>
+
+	<dependencies>
+		<dependency org="org/osgi" name="org.osgi.core" rev="${osgi.version}" conf="default->default" />
+		<dependency org="havis/net/rest" name="shared" rev="${havis.version}" conf="default->default,src" />
+		<dependency org="javax/ws/rs" name="javax.ws.rs-api" rev="${jax-ws}" conf="default;module" />
+		<dependency org="javax/annotation" name="javax.annotation-api" rev="${javax.annotation-api.version}" conf="module" />
+		<dependency org="javax/xml/bind" name="jaxb-api" rev="${jaxb.version}" conf="default,module" />
+		<dependency org="org/fusesource/restygwt" name="restygwt" rev="${restygwt.version}" conf="default" />
+		<dependency org="havis/transport" name="transport-api" rev="${havis.version}" conf="default->default,src;module" />
+		<dependency org="com/fasterxml/jackson/core" name="jackson-databind" rev="${jackson.version}" conf="default,module->default" />
+		<dependency org="havis/util" name="cycle" rev="${havis.version}" conf="default;module" />
+
+		<dependency org="junit" name="junit" rev="${junit.version}" conf="default" />
+
+	</dependencies>
+
+</ivy-module>

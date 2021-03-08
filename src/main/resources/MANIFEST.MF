@@ -1,0 +1,26 @@
+Bundle-Name: Ha-VIS Capture API
+Bundle-SymbolicName: havis.capture-api
+Bundle-Version: 2.7.0
+Implementation-Version: 2.7
+Bundle-ManifestVersion: 2
+Bundle-Vendor: HARTING IT_SD
+Havis-Bundle: 
+ /OSGI-INF/havis.capture.properties
+Export-Package: 
+ havis.capture,
+ havis.capture.cycle,
+ havis.capture.osgi,
+ havis.capture.poll,
+ havis.capture.provider,
+ havis.capture.rest
+Import-Package: 
+ com.fasterxml.jackson.annotation,
+ com.fasterxml.jackson.core,
+ com.fasterxml.jackson.databind,
+ havis.transport,
+ havis.util.cycle;resolution:=optional,
+ havis.util.cycle.common;resolution:=optional,
+ javax.ws.rs.core,
+ javax.ws.rs.ext,
+ org.osgi.framework;resolution:=optional,
+ org.osgi.framework.wiring;resolution:=optional
