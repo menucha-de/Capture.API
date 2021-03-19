@@ -1,5 +1,5 @@
 Source: havis.capture-api
-Maintainer: HARTING IT_SD <opensource@HARTING.com>
+Maintainer: Menucha Team <info@menucha.de>
 Build-Depends: debhelper, nodejs:amd64, default-jdk-headless:amd64, ant:all, ivy:all, libjsch-java:all
  
 Package: havis.capture-api
